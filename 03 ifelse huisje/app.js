@@ -51,7 +51,19 @@ class App
         g.lineTo(38,38);
         g.closePath();
         g.stroke();
-    
+
+        let randomGetal = (Math.random() *2);
+        if (randomGetal <= 0.5)
+        {
+            g.fillStyle = "yellow";
+            g.fill();  
+        }
+        else if (randomGetal > 0.5)
+        {
+            g.fillStyle = "black";
+            g.fill();  
+        }
+                
     }
 }
 
