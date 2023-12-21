@@ -1,4 +1,22 @@
 
+
+class App
+{ 
+    runApplication()
+    {
+        console.log("hello world!");
+        superMooieGlobalFunction();
+    }
+    newClassFunction()
+    {
+    console.log("Hello world in de nieuweClassFunction");
+    }
+}
+
+let app = new App();
+app.newClassFunction();
+app.runApplication();
+
 function berekening(l, h, u)
 {
     let logY = Math.log(l) + h + Math.pow(u,2);
@@ -7,6 +25,8 @@ function berekening(l, h, u)
 
 let y4 = berekening(15,8,9);
 console.log(y4)
+
+
 
 function ax2bcWiskunde(x, a, b, c)
 {    
@@ -62,14 +82,4 @@ superMooieGlobalFunction();
 superMooieGlobalFunction();
 superMooieGlobalFunction();
 
-class App
-{ 
-    runApplication()
-    {
-        console.log("hello world!");
-        superMooieGlobalFunction();
-    }
-}
 
-let app = new App();
-app.runApplication();
