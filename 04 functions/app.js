@@ -7,15 +7,43 @@ class App
         console.log("hello world!");
         superMooieGlobalFunction();
     }
+
     newClassFunction()
     {
-    console.log("Hello world in de nieuweClassFunction");
+        console.log("Hello world in de nieuweClassFunction");
+    }
+
+    MARIO()
+    {
+        console.log("MARIO!!");
+    }
+
+    HAHAHA()
+    {
+        let antwoord = ("BWAHAHA!!!");
+        return antwoord
+    }
+
+    optellen()
+    {
+        let opgetelt = (1 + 1);
+        return opgetelt
+    }
+
+    aftrekken()
+    {
+        let afgetrekt = (4 - 2);
+        return afgetrekt
     }
 }
 
 let app = new App();
 app.newClassFunction();
 app.runApplication();
+app.MARIO();
+console.log(app.HAHAHA());
+console.log(app.optellen());
+console.log(app.aftrekken());
 
 function berekening(l, h, u)
 {
