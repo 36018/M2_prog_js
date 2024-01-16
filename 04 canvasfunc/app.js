@@ -41,12 +41,37 @@ class App
         g.fillStyle = "white";
         g.strokeStyle = "black";
         g.beginPath();
-        g.moveTo(30 + x,36+y);
+        g.moveTo(30+x,36+y);
         g.lineTo(30+x,42+y);
         g.lineTo(38+x,44+y);
         g.lineTo(38+x,38+y);
         g.closePath();
         g.stroke();
+    }
+
+    tekenKerstBoom(g, x, y)
+    {
+        g.beginPath();
+        g.fillStyle = "brown";
+        g.strokeStyle = "brown";
+        g.moveTo(0+x,300+y);
+        g.lineTo(200+x,300+y);
+        g.lineTo(200+x,0+y);
+        g.lineTo(+x,+y);
+        g.closePath();
+        g.stroke();
+        g.fill();
+
+        g.beginPath();
+        g.fillStyle = "green";
+        g.strokeStyle = "green";
+        g.moveTo(0+x,0+y);
+        g.lineTo(0+x,500+y);
+        g.lineTo(500+x,0+y);
+        g.closePath();
+        g.stroke();
+        g.fill();
+
     }
 
     runApplication()
@@ -58,7 +83,7 @@ class App
         let x = 20;
         let y = 20;
         this.tekenhuis(g, x, y);
-        
+        this.tekenKerstBoom(g, x, y);
     }
 }
 
