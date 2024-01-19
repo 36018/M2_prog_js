@@ -52,26 +52,38 @@ class App
     tekenKerstBoom(g, x, y)
     {
         g.beginPath();
-        g.fillStyle = "brown";
-        g.strokeStyle = "brown";
-        g.moveTo(0+x,300+y);
-        g.lineTo(200+x,300+y);
-        g.lineTo(200+x,0+y);
-        g.lineTo(+x,+y);
-        g.closePath();
-        g.stroke();
-        g.fill();
+        
+        // g.moveTo(0+x,300+y);
+        // g.lineTo(200+x,300+y);
+        // g.lineTo(200+x,0+y);
+        // g.lineTo(+x,+y);
+        // g.closePath();
+        // g.stroke();
+        // g.fill();
 
         g.beginPath();
         g.fillStyle = "green";
         g.strokeStyle = "green";
         g.moveTo(0+x,0+y);
-        g.lineTo(0+x,500+y);
-        g.lineTo(500+x,0+y);
+        g.lineTo(-20+x,20+y);
+        g.lineTo(-5+x,20+y);
+        g.lineTo(-25+x,40+y);
+        g.lineTo(25+x, 40+y);
+        g.lineTo(5+x,20+y);
+        g.lineTo(20+x,20+y);
+        g.lineTo(0+x,0+y);
         g.closePath();
         g.stroke();
         g.fill();
 
+
+        g.fillStyle = "brown";
+        g.strokeStyle = "brown";
+        g.beginPath();
+        g.rect(-5+x, 40+y, 10, 20);
+        g.closePath();
+        g.stroke();
+        g.fill();
     }
 
     runApplication()
@@ -82,8 +94,10 @@ class App
         console.log(canvas);
         let x = 20;
         let y = 20;
-        this.tekenhuis(g, x, y);
-        this.tekenKerstBoom(g, x, y);
+        this.tekenhuis(g, 100, 20);
+        this.tekenhuis(g, 20, 20);
+        this.tekenKerstBoom(g, 100, 100);
+        this.tekenKerstBoom(g, 150, 120);
     }
 }
 

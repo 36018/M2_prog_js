@@ -3,22 +3,29 @@ class App
     runApplication()
     {
         console.log("hello world!");
-        let array = ['Geen idee','Geen idee1','Geen idee2','Geen idee3'] 
+        const array = ["één", "twee", "drie"];
         console.log (array);
 
-        for (let i = 0; i < array.length; i++) {
-            const element = array [i];
-            console.log (i + ": "+ element);
+        for (let i = 0; i < array.length; i++){
+            const element = array[i];
+            console.log(i + ": "+ array);
         }
 
-        let nummer = [ 2, 5, 7];
+        const nummer = [2, 5, 7];
+        console.log (nummer);
 
-        for (let i = 0; i < nummer.length; i++) {
-            const answer = nummer [i];
-            console.log (answer + 1);
+        for (let i = 0; i < 2; i++){
+            const numbers = nummer[i];
+            console.log (numbers + 1);
         }
+
+       
+
     }
 }
 
+
 let app = new App();
 app.runApplication();
+
+
