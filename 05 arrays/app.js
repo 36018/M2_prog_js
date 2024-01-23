@@ -38,6 +38,23 @@ class App
             console.log (numbers + 1);
         }
 
+        let headersByCssClass = document.getElementsByClassName("games");
+
+        for (let i = 0; i < headersByCssClass.length; i++){
+            let element = headersByCssClass[i].innerText;
+            console.log (element);
+        }
+
+        for (let i = 0; i < headersByCssClass.length; i++){
+            headersByCssClass[i].innerText = "huh?"
+        }
+
+        headersByCssClass[0].innerText = "I ";
+        headersByCssClass[1].innerText = "Was ";
+        headersByCssClass[2].innerText = "Crazy ";
+        headersByCssClass[3].innerText = "Once ";
+        headersByCssClass[4].innerText = "!!!! ";
+
     }
 }
 
