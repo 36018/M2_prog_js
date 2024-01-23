@@ -55,6 +55,11 @@ class App
         headersByCssClass[3].innerText = "Once ";
         headersByCssClass[4].innerText = "!!!! ";
 
+        const data = ["I" , "Was", "Crazy", "Once", "!!!!"];
+        
+        for (let i = 0; i < headersByCssClass.length; i++){
+            headersByCssClass[i].innerText = i +": "+data[i]
+        }
     }
 }
 
