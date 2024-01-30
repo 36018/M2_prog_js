@@ -21,9 +21,10 @@ class Dino
 
 class Plant
 {
-    constructor(naam, leeftijd)
+    constructor(naam)
     {
-
+        this.naam = naam;
+        this.leeft = false;
     }
 }
 
